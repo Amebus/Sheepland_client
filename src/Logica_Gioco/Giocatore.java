@@ -10,8 +10,8 @@ public class Giocatore
 	private Integer at_punteggio;
 	private E_Tipo_Terreno at_tessera_terreno_iniziale;
 	/*
-	 * Dato che ogni giocatore può possedere più di una tessera per tipo terreno,
-	 * questa possibilità comparirà come un elemento in più nella lista
+	 * Dato che ogni giocatore puï¿½ possedere piï¿½ di una tessera per tipo terreno,
+	 * questa possibilitï¿½ comparirï¿½ come un elemento in piï¿½ nella lista
 	 */
 	private ArrayList<E_Tipo_Terreno> at_tessere_terreno_possedute;
 	
@@ -27,7 +27,7 @@ public class Giocatore
 
 		public Spesa_Eccessiva_Exception ()
 		{
-			super("Spesa oltre i limiti concessi! Il conto non può scendere sotto zero");
+			super("Spesa oltre i limiti concessi! Il conto non puï¿½ scendere sotto zero");
 		}
 	}
 	
@@ -64,6 +64,11 @@ public class Giocatore
 		return this.at_nome;
 	}
 	
+	/**
+	 * Return the number associated to the Giocatore object
+	 * @author Mirko
+	 * @return an Integer
+	 */
 	public Integer get_Numero_Giocatore()
 	{
 		return this.at_numero_giocatore;
@@ -128,7 +133,7 @@ public class Giocatore
 	{
 		if(this.at_tessere_terreno_possedute==null)
 		{
-			throw new Rimozione_Tessera_Exception("Non è presente alcuna tessera");
+			throw new Rimozione_Tessera_Exception("Non ï¿½ presente alcuna tessera");
 		}
 		
 		if(!this.at_tessere_terreno_possedute.contains(tipo_Terreno))
