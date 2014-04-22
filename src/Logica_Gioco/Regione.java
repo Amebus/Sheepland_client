@@ -30,6 +30,10 @@ public class Regione
 	 */
 	public class Animale_Non_Trovato extends Exception
 	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		public Animale_Non_Trovato(){super();}
 		public Animale_Non_Trovato(String s){super(s);}
 		
